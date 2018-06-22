@@ -23,13 +23,17 @@
 # print(fib(60))
 
 # Wap to print the fibonacci numbers in given range
-def fib(number):
-    a, b = 0, 1
-    for i in range(number-1):
-        a, b = b, a + b
-    return a
+
+def fib_series(min, max):
+    result = []
+    f1, f2 = 0, 1
+    while f2 < max:
+        if f2 >= min:
+            result.append(f2)
+        f1, f2 = f2, f1 + f2
+    return result
 
 
-number = int(input('Enter number:'))
-for i in range(1,number):
-    print(fib(i))
+min = int(input('Enter min:'))
+max = int(input('Enter max:'))
+print(fib_series(min,max))
