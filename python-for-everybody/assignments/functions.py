@@ -45,5 +45,19 @@ def factorial(number):
 
 
 print(factorial((4)))
+print(factorial((5)))
 
+# Write a program which will find all such numbers which are divisible by 7 but are not a multiple of 5,
+# in a given range
+
+def find_number(min , max):
+    result = []
+    for number in range (min, max):
+        if number % 7 ==0 and number % 5 != 0:
+            result.append(number)
+    return result
+
+min = int(input("Enter min:"))
+max = int(input("Enter max:"))
+print(find_number(min, max))
 
