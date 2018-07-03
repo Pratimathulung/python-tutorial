@@ -13,3 +13,20 @@ def find_even(min, max):
 min = int(input('Enter min:'))
 max = int(input('Enter max:'))
 print(find_even(min, max))
+
+
+# Write a program that accepts a sentence and calculate the number of upper case letters and lower case letters.
+def count_number(line):
+    upper_case = 0
+    lower_case = 0
+    for letter in line:
+        if letter.isupper():
+            upper_case += 1
+        if letter.islower():
+            lower_case += 1
+    print('Upper case: %d' % upper_case)
+    print('Lower case: %d' % lower_case)
+
+
+line = input()
+count_number(line)
