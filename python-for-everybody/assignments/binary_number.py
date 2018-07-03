@@ -5,27 +5,18 @@
 # Then the output should be:
 # 1010
 
-def test_number(numbers):
+
+def test_number(numbers, divisor):
     result = []
     for number in numbers:
         binary_number = int(number, 2)
-        if binary_number % 5 == 0:
+        if binary_number % divisor == 0:
             result.append(number)
     return ','.join(result)
 
 
 numbers = input().split(',')
-print(test_number(numbers))
-
-
-def test_number(numbers):
-    result = []
-    for number in numbers:
-        binary_number = int(number, 2)
-        if binary_number % 3 == 0:
-            result.append(number)
-    return ','.join(result)
-
+print(test_number(numbers, 5))
 
 numbers = input().split(',')
-print(test_number(numbers))
+print(test_number(numbers, 3))
