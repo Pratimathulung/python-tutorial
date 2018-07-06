@@ -1,4 +1,4 @@
-# Write a program, which will find all such numbers between 1000 and 3000 (both included) such that each digit of the
+#1) Write a program, which will find all such numbers between 1000 and 3000 (both included) such that each digit of the
 #  number is an even number.
 # The numbers obtained should be printed in a comma-separated sequence on a single line.
 
@@ -15,7 +15,7 @@ max = int(input('Enter max:'))
 print(find_even(min, max))
 
 
-# Write a program that accepts a sentence and calculate the number of upper case letters and lower case letters.
+#2) Write a program that accepts a sentence and calculate the number of upper case letters and lower case letters.
 def count_number(line):
     upper_case = 0
     lower_case = 0
@@ -30,3 +30,6 @@ def count_number(line):
 
 line = input()
 count_number(line)
+
+#3) Write a program that computes the value of a+aa+aaa+aaaa with a given digit as the value of a.
+

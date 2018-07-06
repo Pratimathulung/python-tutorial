@@ -48,3 +48,4 @@ def get_even_odd_sum_diff(numbers):
 
 
 print(get_even_odd_sum_diff([1, 3, 5, 6, 8, 11]))
+
