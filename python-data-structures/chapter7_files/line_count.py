@@ -5,6 +5,7 @@ def count_lines(file_name,starting_with):
         print(line)
         if line.startswith(starting_with):
             count += 1
+    file.close()
     return count
 
 
