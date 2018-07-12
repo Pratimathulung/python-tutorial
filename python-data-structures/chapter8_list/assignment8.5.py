@@ -3,24 +3,7 @@
 # already in the list and if not append it to the list. When the program completes, sort and print the resulting words
 # in alphabetical order.
 #
-import re
 
-
-def remove_repeated_words(file_name):
-    file = open(file_name)
-    lst = list()
-    words = re.split(r' |\n', file.read().rstrip())
-    for word in words:
-        if word in lst:
-            continue
-        else:
-            lst.append(word)
-    lst.sort()
-    return lst
-
-
-file_name = input('Enter file here:')
-print(remove_repeated_words(file_name))
 
 # file_name = input("Enter file name: ")
 # file = open(file_name)
