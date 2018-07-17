@@ -14,3 +14,6 @@ dct['age'] = 23
 print(dct)
 dct['name'] = 'Muna'
 print(dct)
+
+stuff = dict()
+print(stuff.get('candy', -1))
