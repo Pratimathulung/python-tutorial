@@ -8,6 +8,7 @@ spans = soup('span')
 numbers = []
 
 for span in spans:
+    print(span)
     numbers.append(int(span.contents[0]))
 
 print(sum(numbers))
