@@ -38,12 +38,11 @@ CREATE TABLE Track (
 fname = input('Enter filename: ')
 if len(fname) < 1: fname = 'Library.xml'
 
+
 def find_field(track, wanted_field):
-    found = False
     for tag in track:
-        if found: return tag.text
         if tag.tag == 'key' and tag.text == wanted_field:
-            found = True
+            return tag.text
     return None
 
 
